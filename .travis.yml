@@ -22,9 +22,9 @@ script:
   - docker build -t udagram-frontend .
 
   # Tag the Docker image with the latest tag
-  - docker tag udagram-frontend 24800/udagram-frontend:v1
+  - docker tag udagram-frontend 24800/udagram-frontend:v2
 
 # Steps to run after a successful build
 after_success:
   # Push the image to Dockerhub
-  - docker push 24800/udagram-frontend:v1
+  - docker push 24800/udagram-frontend:v2
